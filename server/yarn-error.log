@@ -1,0 +1,71 @@
+Arguments: 
+  /usr/local/Cellar/node@10/10.23.0/bin/node /Users/ahmad/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/ahmad/.rvm/gems/ruby-2.7.0/bin:/Users/ahmad/.rvm/gems/ruby-2.7.0@global/bin:/Users/ahmad/.rvm/rubies/ruby-2.7.0/bin:/usr/local/opt/node@10/bin:/usr/local/opt/node@10/bin:/usr/local/opt/node@10/bin:/usr/local/opt/node@10/bin:/Users/ahmad/.yarn/bin:/Users/ahmad/.config/yarn/global/node_modules/.bin:/Users/ahmad/.nvm/versions/node/v10.16.0/bin:/usr/local/opt/node@8/bin:/usr/local/opt/node@8/bin:/Users/ahmad/.fastlane/bin/fastlane_lib:/Users/ahmad/.fastlane/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/ahmad/Library/Android/sdk/platform-tools:/Users/ahmad/Library/Android/sdk/tools:/Users/ahmad/Library/Android/sdk/platform-tools:/Users/ahmad/codebase/flutter/bin:/Users/ahmad/.rvm/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  10.23.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ahmad/codebase/firebase-test/server/package.json: Unexpected token } in JSON at position 718
+      at JSON.parse (<anonymous>)
+      at /Users/ahmad/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/ahmad/.yarn/lib/cli.js:310:30)
+      at /Users/ahmad/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "firebase-back-end",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Rashid Ahmad",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+      "test": "jest",
+      "start": "NODE_ENV='production'  node ./build",
+      "bundle": "babel ./src --out-dir ./build --extensions \".ts,.js\" && cp ./src/schema/type-defs.js ./build/",
+      "lint": "eslint .",
+      "format": "prettier --write .",
+      "lint:fix": "eslint . --fix",
+      "dev": "NODE_ENV='development' nodemon -e js,ts --exec babel-node --extensions \".ts,.js,\" ./src/"
+    },
+    "dependencies": {
+      "apollo-server": "^2.19.1",
+      "apollo-server-express": "^2.19.1",
+      "dotenv": "^8.2.0",
+      "graphql": "^15.4.0",
+      "lodash": "^4.17.20",
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.12.10",
+      "@babel/core": "^7.12.10",
+      "@babel/node": "^7.12.10",
+      "@babel/plugin-transform-runtime": "^7.12.10",
+      "@babel/preset-env": "^7.12.11",
+      "@babel/preset-typescript": "^7.12.7",
+      "@babel/runtime": "^7.12.5",
+      "@typescript-eslint/eslint-plugin": "^4.12.0",
+      "@typescript-eslint/parser": "^4.12.0",
+      "eslint": "^7.17.0",
+      "eslint-plugin-prettier": "^3.3.1",
+      "nodemon": "^2.0.7",
+      "prettier": "^2.2.1",
+      "ts-node": "^9.1.1",
+      "typescript": "^4.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
