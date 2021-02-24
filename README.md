@@ -10,7 +10,6 @@
 
 - Create and do the initial setup for a frontend project with React and a backend project with NodeJS.
 - Setup firebase in your frontend and backend projects with the provided firebase web configand service account files respectively.
-- Setup and create some basic unit tests for the application.
 
 ###### Frontend
 - Create a user login page with email and password inputs that logs in the user. Use [firebase auth](https://firebase.google.com/docs/auth/web/password-auth) to login the user. There is already a default user created with email `demo@gmail.com` and password `demo123`. Once logged in, you would be able to [fetch user document from users collection](https://firebase.google.com/docs/firestore/query-data/get-data) with the logged in user id as the document id.

@@ -21,7 +21,7 @@ export default () => {
   });
   const navigateToDetailScreen = (id) => history.push(`{orders/${id}}`);
   if (status === "loading") {
-      return (
+    return (
       <div className="w-full h-full fixed block mt-8 bg-white opacity-75 z-50">
         <span
           className="text-green-500 opacity-75 top-1/2 my-0 mx-auto block relative w-0 h-0"
@@ -37,7 +37,12 @@ export default () => {
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
           <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-            <table width="100%" padding="0" cellSpacing="0" className="table-fixed divide-y divide-gray-200">
+            <table
+              width="100%"
+              padding="0"
+              cellSpacing="0"
+              className="table-fixed divide-y divide-gray-200"
+            >
               <thead className="bg-gray-50">
                 <tr>
                   <th

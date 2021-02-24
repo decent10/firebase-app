@@ -42,7 +42,6 @@ export default () => {
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 Hello {currentUser.email}
               </h2>
-             
             </div>
             <div className="flex flex-wrap mt-10 justify-center">
               <div className="m-3">

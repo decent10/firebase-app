@@ -13,7 +13,7 @@ const typeDefs = gql`
     email: String
     phone: Int
   }
-  input UserInput1 {
+  input CreateOrderInput {
     user: UserInput
     address: AddressInput
   }
@@ -58,7 +58,7 @@ const typeDefs = gql`
       uid: String
       title: String
       bookingDate: String
-      input: UserInput1
+      input: CreateOrderInput
     ): Order
   }
 `;

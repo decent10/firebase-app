@@ -17,7 +17,7 @@ function App() {
     <Router>
       <QueryClientProvider client={queryClient}>
         <AuthProvider>
-        <Navbar />
+          <Navbar />
           <div>
             {/*
           A <Switch> looks through all its children <Route>
